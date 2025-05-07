@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="flex flex-col xl:flex-row justify-between gap-x-8">
           {/** Text */}
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
-            <h1 className="h1 mb-4">Hello, I’m Joana Franchesca</h1>
+            <h1 className="h1 mb-4">Hello, I'm Joana Franchesca</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
               BS Computer Science Major in Core Science at University of Santo
               Tomas
@@ -22,10 +22,11 @@ const Hero = () => {
 
             {/** Buttons and Social Media */}
             <div className="flex justify-center sm:justify-center xl:justify-start items-center gap-x-4 mt-4">
-              <Button className="gap-x-2 flex rounded-md h-12 items-center border-2 border-[#1C1423] bg-secondary text-secondary-foreground dark:bg-primary dark:text-primary-foreground">
-                DOWNLOAD CV <Download size={18} />
-              </Button>
-
+              <a href="/resume.pdf" download="Joana_Franchesca_Resume.pdf">
+                <Button className="gap-x-2 flex rounded-md h-12 items-center border-2 border-[#1C1423] bg-secondary text-secondary-foreground dark:bg-primary dark:text-primary-foreground">
+                  DOWNLOAD CV <Download size={18} />
+                </Button>
+              </a>
               <SocialMedia
                 containerStyles="flex items-center gap-x-4"
                 iconsStyles="text-2xl text-foreground text-[22px] hover:text-primary transition-all"

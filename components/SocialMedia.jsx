@@ -3,11 +3,11 @@ import Link from 'next/link';
 
 const icons = [
     {
-        path: '/', // Add the correct URL here
+        path: 'https://www.linkedin.com/in/joanatrinidad/', 
         name: <RiLinkedinFill />,
     },
     {
-        path: '/', // Add the correct URL here
+        path: 'https://github.com/joanatrinidad', 
         name: <RiGithubFill />,
     },
 ];
@@ -15,8 +15,8 @@ const icons = [
 const SocialMedia = ({ containerStyles, iconsStyles }) => {
     return (
         <div className={containerStyles}>
-            {icons.map((icon, index) => (
-                <Link href={icon.path} key={index}>
+                  {icons.map((icon, index) => (
+                <Link href={icon.path} key={index} target="_blank" rel="noopener noreferrer">
                     <div className={iconsStyles}>
                         {icon.name}
                     </div>

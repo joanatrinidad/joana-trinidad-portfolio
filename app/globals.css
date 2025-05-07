@@ -76,6 +76,10 @@
   @apply font-bold text-6xl xl:text-[72px] xl:leading-[80px] tracking-[-2px];
 }
 
+.normal{
+  @apply font-bold text-xl;
+}
+
 .subtitle{
   @apply  text-lg  mb-8;
 }
