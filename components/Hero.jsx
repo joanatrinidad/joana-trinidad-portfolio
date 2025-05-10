@@ -41,8 +41,8 @@ const Hero = () => {
               <Image
                 src="/ellipse.svg"
                 alt="Decorative Circle"
-                layout="fill"
-                objectFit="cover"
+                fill
+                style={{ objectFit: "cover" }}
               />
               <MyImg imgSrc="/dev.png" />
             </div>

@@ -15,9 +15,9 @@ const projects = [
   {
     id: 1,
     number: '01',
-    title: 'Web Development',
-    subtitle: 'PORTFOLIO WEBSITE',
-    description: 'A responsive portfolio website built with modern web technologies to showcase projects and skills in an elegant interface.',
+    title: 'Web Development - JSP',
+    subtitle: 'EXPRESS GAINS',
+    description: 'A web-based inventory system that aims to provide support to the administrators of the company to have easy access to updating and viewing their products.',
     image: '/MultiNotes.png',
     category: 'Web Development',
     tags: ['React', 'NextJS', 'TailwindCSS'],
@@ -38,7 +38,7 @@ const projects = [
   },
   {
     id: 3,
-    number: '07',
+    number: '03',
     title: 'Wordpress',
     subtitle: 'Envaa',
     description: 'A thesis that aimed to develop a modified framework for COVID-19 detection algorithm with the use of offline augmentation techniques such as gaussian noise, shear, and brightness increase and decrease.',
@@ -47,6 +47,18 @@ const projects = [
     tags: ['Wordpress', 'Javascript', 'PHP'],
     github: 'https://github.com/username/project3',
     demoLink: 'https://project3-demo.com'
+  },
+  {
+    id: 4,
+    number: '04',
+    title: 'Web Development',
+    subtitle: 'PORTFOLIO WEBSITE',
+    description: 'A responsive portfolio website built with modern web technologies to showcase projects and skills in an elegant interface.',
+    image: '/MultiNotes.png',
+    category: 'Web Development',
+    tags: ['React', 'NextJS', 'TailwindCSS'],
+    github: 'https://github.com/username/project1',
+    demoLink: 'https://project1-demo.com'
   },
 ];
 
@@ -173,7 +185,7 @@ const Projects = () => {
           >
             {filteredProjects.map((project) => (
               <SwiperSlide key={project.id}>
-                <div className="flex flex-col lg:flex-row gap-8 bg-white dark:bg-[#261e22] rounded-lg p-4 md:p-6">
+                <div className="flex flex-col lg:flex-row gap-8 rounded-lg p-4 md:p-6">
                   <div className="lg:w-[40%]">
                     <div className="aspect-square overflow-hidden rounded-lg shadow-md">
                       <img 
@@ -185,43 +197,47 @@ const Projects = () => {
                   </div>
                   
                   <div className="lg:w-[60%]">
-                    <div className="space-y-4">
-                      <h2 className="text-3xl font-light text-[#8f7764] dark:text-[#a0847b]">
-                        {project.number} <span className="ml-2 text-[#261e22] dark:text-white">{project.title}</span>
+                    <div className="pt-10 space-y-6">
+                      <h2 className="text-3xl font-semibold text-[#8f7764] dark:text-[#a0847b]">
+                        {project.number} <span className="ml-2 text-[#8f7764] text-3xl dark:text-[#a0847b]">{project.title}</span>
                       </h2>
                       
-                      <h3 className="text-sm uppercase tracking-wider text-[#98675a] dark:text-[#a0847b]">
+                      <h3 className="text-sm pr-24 uppercase tracking-wider text-[#1C1423] font-semibold dark:text-[#AD98B8]">
                         {project.subtitle}
                       </h3>
                       
-                      <p className="text-base dark:text-gray-200">
-                        {project.description}
-                      </p>
+                      <div className="pr-24">
+                        <p className="text-sm text-justify text-[#1C1423] tracking-wide leading-relaxed dark:text-[#AD98B8]">
+                          {project.description}
+                        </p>
+                      </div>
                       
-                      <div className="pt-4 border-b border-gray-200 dark:border-gray-700 pb-6">
+                      <div className="pt-4 text-base">
                         <div className="flex flex-wrap gap-2">
                           {project.tags.map((tag, index) => (
                             <span 
                               key={index} 
-                              className="px-2 py-1 text-[#261e22] dark:text-white dark:bg-[#3a2e32] rounded-md text-xs"
+                              className=" py-1 text-[#1C1423] dark:text-[#AD98B8] font-semibold text-xs"
                             >
-                              {tag}
+                              {tag}{index < project.tags.length - 1 ? ", " : ""}
                             </span>
                           ))}
                         </div>
+                        <div className="pt-4 border-b-2 w-5/6 border-[#9566CD]"></div>
                       </div>
                       
-                      <div className="pt-2">
+                      
+                      
+                      <div className="pt-0">
                         <a 
                           href={project.github} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="inline-flex items-center text-[#261e22] dark:text-white hover:text-[#8f7764] dark:hover:text-[#a0847b] transition-colors"
+                          className="inline-flex items-center hover:text-[#9566CD] dark:hover:text-primary transition-colors"
                         >
-                          <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <svg className="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                           </svg>
-                          GitHub
                         </a>
                       </div>
                     </div>
@@ -231,7 +247,7 @@ const Projects = () => {
             ))}
           </Swiper>
         ) : (
-          <div className="text-center py-20 bg-gray-100 dark:bg-gray-800 rounded-lg">
+          <div className="text-center py-20 rounded-lg">
             <h3 className="text-xl text-gray-600 dark:text-gray-300">No projects found in this category</h3>
           </div>
         )}
@@ -240,10 +256,10 @@ const Projects = () => {
         {filteredProjects.length > 1 && (
           <>
             <div className="swiper-button-prev cursor-pointer">
-              <ChevronLeft size={28} className="text-[#261e22] hover:text-[#8f7764] dark:text-white dark:hover:text-[#a0847b]" />
+              <ChevronLeft size={28}  className="text-[#261e22] hover:text-[#8f7764] dark:text-[#AD98B8] dark:hover:text-primary" />
             </div>
             <div className="swiper-button-next cursor-pointer">
-              <ChevronRight size={28} className="text-[#261e22] hover:text-[#8f7764] dark:text-white dark:hover:text-[#a0847b]" />
+              <ChevronRight size={28} className="text-[#261e22] hover:text-[#8f7764] dark:text-[#AD98B8] dark:hover:text-primary" />
             </div>
           </>
         )}
