@@ -13,13 +13,13 @@ const Resume = () => {
   // Content components for each section
   const EducationContent = () => (
     <div>
-      <h2 className="text-4xl font-bold mb-4">Education</h2>
-      <p className="text-muted-foreground mb-8">
+      <h2 className="text-5xl font-bold mb-4 text-[#AD8F75] dark:text-[#AD8F75]">Education</h2>
+      <p className="mb-8 pr-24 text-[#1C1423] dark:text-[#AD98B8]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget odio massa. Mauris quam augue, fringilla a nisi et, ultricies vestibulum nisi.
       </p>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="bg-card text-card-foreground rounded-lg p-4 shadow">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 gap-x-4">
+        <div className="bg-card bg-[#AD98B8]  text-card-foreground rounded-lg p-4 w-5/6 shadow">
           <div className="text-sm font-medium mb-2">2020 - 2024</div>
           <div className="font-bold mb-1">Core Computer Science</div>
           <div className="text-sm flex items-center gap-1">
@@ -27,7 +27,7 @@ const Resume = () => {
           </div>
         </div>
         
-        <div className="bg-card text-card-foreground rounded-lg p-4 shadow">
+        <div className="bg-card bg-[#AD98B8] text-card-foreground rounded-lg p-4 w-5/6 shadow">
           <div className="text-sm font-medium mb-2">2020 - 2024</div>
           <div className="font-bold mb-1">Core Computer Science</div>
           <div className="text-sm flex items-center gap-1">
@@ -35,7 +35,7 @@ const Resume = () => {
           </div>
         </div>
         
-        <div className="bg-card text-card-foreground rounded-lg p-4 shadow">
+        <div className="bg-card bg-[#AD98B8] text-card-foreground rounded-lg p-4 w-5/6 shadow">
           <div className="text-sm font-medium mb-2">2020 - 2024</div>
           <div className="font-bold mb-1">Core Computer Science</div>
           <div className="text-sm flex items-center gap-1">
@@ -43,7 +43,7 @@ const Resume = () => {
           </div>
         </div>
         
-        <div className="bg-card text-card-foreground rounded-lg p-4 shadow">
+        <div className="bg-card bg-[#AD98B8] text-card-foreground rounded-lg p-4 w-5/6 shadow">
           <div className="text-sm font-medium mb-2">2020 - 2024</div>
           <div className="font-bold mb-1">Core Computer Science</div>
           <div className="text-sm flex items-center gap-1">
@@ -56,13 +56,13 @@ const Resume = () => {
 
   const ExperienceContent = () => (
     <div>
-      <h2 className="text-4xl font-bold mb-4">Experience / Certificates</h2>
-      <p className="text-muted-foreground mb-8">
+      <h2 className="text-5xl font-bold mb-4 text-[#AD8F75] dark:text-[#AD8F75]">Experience / Certificates</h2>
+      <p className="mb-8 pr-24 text-[#1C1423] dark:text-[#AD98B8]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget odio massa. Mauris quam augue, fringilla a nisi et, ultricies vestibulum nisi.
       </p>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="bg-card text-card-foreground rounded-lg p-4 shadow">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 gap-x-4">
+        <div className="bg-card bg-[#AD98B8] text-card-foreground rounded-lg p-4 w-5/6 shadow">
           <div className="text-sm font-medium mb-2">2020 - 2024</div>
           <div className="font-bold mb-1">Core Computer Science</div>
           <div className="text-sm flex items-center gap-1">
@@ -70,7 +70,7 @@ const Resume = () => {
           </div>
         </div>
         
-        <div className="bg-card text-card-foreground rounded-lg p-4 shadow">
+        <div className="bg-card bg-[#AD98B8] text-card-foreground rounded-lg p-4 w-5/6 shadow">
           <div className="text-sm font-medium mb-2">2020 - 2024</div>
           <div className="font-bold mb-1">Core Computer Science</div>
           <div className="text-sm flex items-center gap-1">
@@ -78,7 +78,7 @@ const Resume = () => {
           </div>
         </div>
         
-        <div className="bg-card text-card-foreground rounded-lg p-4 shadow">
+        <div className="bg-card bg-[#AD98B8] text-card-foreground rounded-lg p-4 w-5/6 shadow">
           <div className="text-sm font-medium mb-2">2020 - 2024</div>
           <div className="font-bold mb-1">Core Computer Science</div>
           <div className="text-sm flex items-center gap-1">
@@ -86,7 +86,7 @@ const Resume = () => {
           </div>
         </div>
         
-        <div className="bg-card text-card-foreground rounded-lg p-4 shadow">
+        <div className="bg-card bg-[#AD98B8] text-card-foreground rounded-lg p-4 w-5/6 shadow">
           <div className="text-sm font-medium mb-2">2020 - 2024</div>
           <div className="font-bold mb-1">Core Computer Science</div>
           <div className="text-sm flex items-center gap-1">
@@ -99,16 +99,16 @@ const Resume = () => {
 
   const SkillsContent = () => (
     <div>
-      <h2 className="text-4xl font-bold mb-4">Skills</h2>
-      <p className="text-muted-foreground mb-8">
+      <h2 className="text-5xl font-bold mb-4 text-[#AD8F75] dark:text-[#AD8F75]">Skills</h2>
+      <p className="mb-8 pr-24 text-[#1C1423] dark:text-[#AD98B8]">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget odio massa. Mauris quam augue, fringilla a nisi et, ultricies vestibulum nisi.
       </p>
       
-      <div className="grid grid-cols-3 gap-4">
-        {[...Array(6)].map((_, i) => (
-          <div key={i} className="bg-card text-card-foreground rounded-lg p-6 flex items-center justify-center shadow">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+      <div className="grid grid-cols-4 gap-6">
+        {[...Array(12)].map((_, i) => (
+          <div key={i} className="bg-[#AD98B8] rounded-full w-20 h-20 flex items-center justify-center shadow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="32" height="32" fill="#1C1423">
+              <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
             </svg>
           </div>
         ))}
@@ -118,8 +118,11 @@ const Resume = () => {
 
   const AboutMeContent = () => (
     <div>
-      <h2 className="text-4xl font-bold mb-4">About Me</h2>
-      <div className="bg-card text-card-foreground rounded-lg p-6 shadow space-y-4">
+      <h2 className="text-5xl font-bold mb-4 text-[#AD8F75] dark:text-[#AD8F75]">About Me</h2>
+      <p className="mb-8 pr-24 text-[#1C1423] dark:text-[#AD98B8]">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget odio massa. Mauris quam augue, fringilla a nisi et, ultricies vestibulum nisi.
+      </p>
+      <div className="bg-card bg-[#AD98B8] text-card-foreground rounded-lg p-6 shadow space-y-4">
         <div className="flex items-center">
           <span className="w-24 font-medium">Name:</span>
           <span className="text-muted-foreground"></span>
@@ -144,8 +147,8 @@ const Resume = () => {
   const TabButton = ({ title, active, onClick }) => (
     <button
       onClick={onClick}
-      className={`w-full text-left py-3 px-4 rounded-lg transition-all ${
-        active ? 'bg-card text-card-foreground font-medium' : 'bg-muted/50 text-foreground hover:bg-muted/80'
+      className={`w-full text-center py-3 px-4 rounded-lg transition-all font-semibold ${
+        active ? 'bg-[#AD98B8]/80 text-card-foreground dark:text-primary font-semibold' : 'bg-[#AD98B8]/30 text-foreground hover:bg-[#AD98B8]/50'
       }`}
     >
       {title}
@@ -153,19 +156,19 @@ const Resume = () => {
   );
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container px-4 py-12 ml-28">
       {/* Content Wrapper */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_3fr] gap-8">
         {/* Left Side */}
         <div className="space-y-6">
           <div className="">
-            <h2 className="text-4xl font-bold mb-4">Why hire me?</h2>
-            <p className="text-muted-foreground">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget odio massa. Mauris quam augue, fringilla a nisi et, ultricies vestibulum nisi.
+            <h1 className="text-5xl font-bold mb-4 text-[#AD8F75] dark:text-[#AD8F75]">Why hire me?</h1>
+            <p className="text-[#1C1423] dark:text-[#AD98B8]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget odio massa. 
             </p>
           </div>
           
-          <div className="space-y-3">
+          <div className="space-y-8">
             <TabButton 
               title="Education" 
               active={activeTab === 'education'} 
@@ -193,7 +196,7 @@ const Resume = () => {
         </div>
         
         {/* Right Side - Dynamic Content */}
-        <div>
+        <div className="mx-24">
           {activeTab === 'education' && <EducationContent />}
           {activeTab === 'experience' && <ExperienceContent />}
           {activeTab === 'skills' && <SkillsContent />}
